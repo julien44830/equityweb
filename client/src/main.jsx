@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import FormPage from "./pages/FormPage";
 import QuizPage from "./pages/QuizPage";
+import "./styles/globals-utilities.css";
 
 const router = createBrowserRouter([
   {
