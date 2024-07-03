@@ -8,7 +8,8 @@ import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
 import QuizPage from "./pages/QuizPage";
 import "./styles/globals-utilities.css";
-HomePage
+import "./styles/globals.css"
+
 const router = createBrowserRouter([
   {
     path: "/",
