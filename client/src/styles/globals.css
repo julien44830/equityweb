@@ -128,38 +128,57 @@ h4 {
 .formpage{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    /* gap: 40px; */
     text-align: center;
     margin: 30px;
+    max-width: 100vw;
 }
 
 .template-form{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 70vw; 
+    /* grid-template-columns: 1fr 1fr;
+    height: 70vh; */
 }
 
 .text{
+    flex-direction: column;
+    /* justify-content: center; */
+    display: flex;
+    padding: 17px;
     & p {
+        width: 40vw;
         text-align: justify;
-        padding: 30px;
     }
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
 
-.form {
+.div-form {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
     background-color: rgba(197, 193, 195, 0.27);
-    /* padding: 20px; */
+    padding: 2rem;
     margin: 30px;
+    width: 60%;
+    border-radius: 5px;
 
     & input {
-        height: 4rem;
-        width: 70%;
+        height: 3rem;
+        width: 100%;
+        border-radius: 7px;
+        border :1px;
+        /* outline: red; */
     }
 
     & button {
