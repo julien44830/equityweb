@@ -3,12 +3,24 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./App";
+import HomePage from "./pages/HomePage";
+import FormPage from "./pages/FormPage";
+import QuizPage from "./pages/QuizPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
+    children:[
+      {
+        path:"formpage",
+        element: <FormPage />
+      },
+      {
+        path: "quizpage",
+        element: <QuizPage/>
+      }
+    ]
   },
 ]);
 
