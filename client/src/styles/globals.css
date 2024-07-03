@@ -124,3 +124,50 @@ h4 {
 .card:hover {
     background: var(--black);
 }
+
+.formpage{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    margin: 30px;
+}
+
+.template-form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+
+.text{
+    & p {
+        text-align: justify;
+        padding: 30px;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(197, 193, 195, 0.27);
+    /* padding: 20px; */
+    margin: 30px;
+
+    & input {
+        height: 4rem;
+        width: 70%;
+    }
+
+    & button {
+        height: 3rem;
+        background-color: #3ad07f;
+        border: none;
+        border-radius: 10px;
+        width: 30%;
+        margin-top: 10px;
+    }
+}

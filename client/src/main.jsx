@@ -3,15 +3,16 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./App";
+import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
 import QuizPage from "./pages/QuizPage";
 import "./styles/globals-utilities.css";
+import "./styles/globals.css"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path:"formpage",
