@@ -3,25 +3,23 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
+import App from "./App";
 import FormPage from "./pages/FormPage";
 import QuizPage from "./pages/QuizPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-    children:[
-      {
-        path:"formpage",
-        element: <FormPage />
-      },
-      {
-        path: "quizpage",
-        element: <QuizPage/>
-      }
-    ]
+    element: <App />,
   },
+  {
+    path:"formpage",
+    element: <FormPage />,
+  },
+  {
+    path: "quizpage",
+    element: <QuizPage />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
