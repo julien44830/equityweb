@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import App from "./App";
 import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
 import QuizPage from "./pages/QuizPage";
@@ -12,17 +13,25 @@ import "./styles/globals.css"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <App />,
+    errorElement: <h1>404 Not Found</h1>,
+    children: [
+      {
+        path: "",
+        element: <HomePage />,
+      },
+      {
+        path: "immersion",
+        element: <FormPage />,
+      },
+      {
+        path: "quiz",
+        element: <QuizPage />,
+      }
+    ],
   },
-  {
-    path:"formpage",
-    element: <FormPage />,
-  },
-  {
-    path: "quizpage",
-    element: <QuizPage />,
-  }
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
