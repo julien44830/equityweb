@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
     return (
+
         <main className="container">
             <div className="row">
                 <div className="col-md-6">
