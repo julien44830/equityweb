@@ -85,3 +85,4 @@ To add it during deployment, follow these 2 steps:
 
 If you want to access the logs of your online projet (to follow the deployement or to watch any bug error), connect to your VPS (`ssh user@host`).
 Then, go on your specific project and run  `docker compose logs -t -f`.
+# harmonia_custom
