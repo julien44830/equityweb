@@ -39,3 +39,6 @@ function FormPage() {
       {ComponentToRender && <ComponentToRender />}
     </section>
   );
+}
+
+export default FormPage;
