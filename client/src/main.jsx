@@ -9,7 +9,8 @@ import FormPage from "./pages/FormPage";
 import FormPageDalt from "./pages/FormPageDalt";
 import QuizPage from "./pages/QuizPage";
 import "./styles/globals-utilities.css";
-import "./styles/globals.css"
+import "./styles/responsive.css";
+import "./styles/globals.css";
 
 const router = createBrowserRouter([
   {

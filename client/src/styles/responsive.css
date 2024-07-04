@@ -27,7 +27,24 @@
 
 @media only screen and (min-width: 480px) {}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    #root {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    #root main {
+        flex: 1;
+    }
+
+    main.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 @media only screen and (min-width: 992px) {}
 
