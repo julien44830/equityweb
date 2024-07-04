@@ -35,5 +35,8 @@
     "cross-env": "^7.0.3",
     "lint-staged": "^15.2.2",
     "validate-branch-name": "^1.3.0"
+  },
+  "dependencies": {
+    "lottie-react": "^2.4.0"
   }
 }
