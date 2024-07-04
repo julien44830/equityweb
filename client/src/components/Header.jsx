@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
-        <div>
+        <header>
             <p>logo</p>
             <p>header</p>
             <NavLink className="button" to="/immersion">
@@ -11,7 +11,7 @@ function Header() {
             <NavLink className="button" to="/quiz">
                 Quiz
             </NavLink>
-        </div>
+        </header>
     )
 }
 
