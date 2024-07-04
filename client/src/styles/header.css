@@ -12,7 +12,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 80px;
   left: 50%;
   transform: translate(-50%);
   color: black;
@@ -20,10 +19,21 @@
 
 }
 
+.logo-header img {
+  width: 80px;
+  transition: all 0.3s ease-in;
+}
+
+.logo-header:hover img {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
 .logo-header .baseline {
   color: var(--black);
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
+
 }
 
 .logo-header .baseline span {
@@ -32,18 +42,20 @@
   padding: 0.3rem 1rem;
   border-radius: var(--radius);
   margin-left: 0.5rem;
+
 }
 
 .navlink-header {
   color: var(--primary);
   font-weight: var(--font-weight-bold);
+
 }
 
 .navlink-header:hover {
   text-decoration: none;
   border-bottom: none;
-
 }
+
 
 .header-home .nav-header {
   color: red;
