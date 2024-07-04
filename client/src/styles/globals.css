@@ -41,6 +41,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: var(--font-weight-normal);
     font-style: normal;
+    background-color: var(--grey);
 }
 
 h1,
@@ -101,11 +102,17 @@ h4 {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
-    border-radius: var(--radius-big);
-    border: 1px solid var(--black);
+    border-radius: var(--radius);
+    background-color: var(--white);
     margin: 2rem 0;
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
 }
-
+.card:hover {
+    transform: scale(1.05);
+}
 .card .title-card {
     text-transform: uppercase;
     margin: 0;
@@ -116,6 +123,7 @@ h4 {
 .card .infos-card {
     gap: 2rem;
 }
+
 .card header {
     width: 100%;
     gap: 1rem;
@@ -125,7 +133,7 @@ h4 {
     background: var(--black);
 }
 
-.formpage{
+.formpage {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -133,13 +141,13 @@ h4 {
     margin: 30px;
 }
 
-.template-form{
+.template-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 100vh;
 }
 
-.text{
+.text {
     & p {
         text-align: justify;
         padding: 30px;
