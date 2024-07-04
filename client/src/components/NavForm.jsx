@@ -13,8 +13,8 @@ function NavForm({ setHandicap, setComponent }) {
     <fieldset role="radiogroup" onChange={selectHandicap} className="section-radio">
       <legend>Selectionnez votre handicap:</legend>
 
-      <input type="radio" id="voyant" name="handicap" value="Aveugle" />
-      <label htmlFor="voyant">Mal voyant</label>
+      <input type="radio" id="cecite" name="handicap" value="BlindForm" />
+      <label htmlFor="voyant">Cécité</label>
 
       <input type="radio" id="daltonisme" name="handicap" value="Daltonien" />
       <label htmlFor="daltonisme">Daltonisme</label>
