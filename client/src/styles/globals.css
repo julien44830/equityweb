@@ -212,7 +212,7 @@ h4 {
 .form-item label{
   position: absolute;
   cursor: text;
-  z-index: 2;
+  /* z-index: 2; */
   top: 13px;
   left: 10px;
   font-size: 12px;
@@ -228,4 +228,13 @@ h4 {
 }
 .form-item input:focus + label{
   color: blue
+}
+
+.black-square{
+    background-color: black;
+    position: absolute;
+    right: 0;
+    width: 57%;
+    height: 59vh;  
+    z-index: 2;
 }

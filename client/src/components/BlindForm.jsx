@@ -7,7 +7,7 @@ function BlindForm (){
             </aside>
             <form class="form">
                 <div class="form-item">
-                    <input type="text" id="firstname" name="firstname"/>
+                    <input type="text" id="firstname" name="firstname" required/>
                     <label htmlFor="firstname">Prénom</label>
                 </div>
                 <div class="form-item">
@@ -28,6 +28,8 @@ function BlindForm (){
                 </div>
                 <button type="submit">Valider</button>
             </form>
+            <div className="black-square">
+            </div>
         </section>
     )
 }

@@ -30,14 +30,17 @@ const data = {
 function FormPage() {
     const [handicap, setHandicap] = useState(0);
     const [component, setComponent] = useState("Trouble")
+    console.log("ici c'est le component", component)
     const ComponentToRender = data[component].component;
 
   return (
     <main className="formpage">
       <h1 tabIndex="0">Découvrez la réalité du handicap sur internet</h1>
       <NavForm setHandicap={setHandicap} setComponent={setComponent} handicap={handicap} />
-      <TemplateForm data={data[component]} />
-      {ComponentToRender && <ComponentToRender />}
+      {component !== "BlindForm" ? 
+      <TemplateForm data={data[component]} /> : null }
+      {ComponentToRender && <ComponentToRender />} 
+      
     </main>
   );
 }
