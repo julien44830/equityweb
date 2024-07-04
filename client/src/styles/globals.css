@@ -145,6 +145,7 @@ h4 {
 
 .text{
     flex-direction: column;
+    align-items: center;
     /* justify-content: center; */
     display: flex;
     padding: 17px;
