@@ -1,21 +1,20 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Header() {
-    
-    // const location = useLocation();
+
+    const location = useLocation();
 
     return (
 
         <header className={`header ${location.pathname === "/" ? "header-home" : "header-global"}`}>
-            <p>header</p>
+            <p className="logo-header"> <NavLink className="navlink-header" to="/">header</NavLink></p>
             <nav className="nav-header" >
-            <NavLink className="navlink-header" to="/immersion">
-                Immersion
-            </NavLink>
-            <NavLink className="navlink-header" to="/quiz">
-                Quiz
-            </NavLink>
-            <p>FAQ</p>
+                <NavLink className="navlink-header" to="/immersion">
+                    Immersion
+                </NavLink>
+                <NavLink className="navlink-header" to="/quiz">
+                    Quiz
+                </NavLink>
             </nav>
         </header>
     )

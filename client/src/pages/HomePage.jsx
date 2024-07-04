@@ -14,7 +14,7 @@ function HomePage() {
 
         <main className="container">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 px-5">
                     <div className="card">
                         <Lottie animationData={IconAnimateQuestion} loop={1} autoplay={true} style={style} />
 
@@ -24,9 +24,9 @@ function HomePage() {
                         <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="immersion">Testez vos connaissances</Link></p>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6  px-5">
                     <div className="card">
-                        <Lottie animationData={IconAnimateBrain} loop={1} autoplay={true}  style={style}  />
+                        <Lottie animationData={IconAnimateBrain} loop={1} autoplay={true} style={style} />
 
                         <h2 className="mt-0">Immersion</h2>
                         <p>Lorem ipsum dolorm sam datus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
