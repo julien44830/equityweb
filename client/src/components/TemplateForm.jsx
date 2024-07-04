@@ -1,10 +1,10 @@
 function TemplateForm (){
     return (
         <section className="template-form">
-            <div className="text">
-                <h2>Déficience à montrer</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe dolores, officiis officia illum consequuntur provident, facilis error quasi sint qui, voluptatum vitae? Illum, veniam et laboriosam earum quo unde libero.</p>
-            </div>
+            <aside className="text">
+                <h2 tabIndex="0">Déficience à montrer</h2>
+                <p tabIndex="0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe dolores, officiis officia illum consequuntur provident, facilis error quasi sint qui, voluptatum vitae? Illum, veniam et laboriosam earum quo unde libero.</p>
+            </aside>
             <form className="form">
                 <input type="text" id="firstname" name="firstname" placeholder=" Prénom "/>
                 <input type="text" id="lastname" name="lastname" placeholder=" Nom "/>

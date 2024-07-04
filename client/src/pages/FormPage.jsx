@@ -2,10 +2,10 @@ import TemplateForm from "../components/TemplateForm";
 
 function FormPage (){
     return (
-        <section className="formpage">
-        <h1>Découvrez la réalité du handicap sur internet</h1>
+        <main className="formpage">
+        <h1 tabIndex="0">Découvrez la réalité du handicap sur internet</h1>
         <TemplateForm />
-        </section>
+        </main>
         )
 }
 
