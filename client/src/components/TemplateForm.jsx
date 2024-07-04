@@ -1,52 +1,35 @@
-function TemplateForm() {
-  return (
-    <>
-      <EyeTracker />
-      <section className="template-form">
-        <div className="text">
-          <h2>Déficience à montrer</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-            dolores, officiis officia illum consequuntur provident, facilis
-            error quasi sint qui, voluptatum vitae? Illum, veniam et laboriosam
-            earum quo unde libero.
-          </p>
-        </div>
-        <form className="form">
-          <div className="div-form">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder=" Prénom "
-            />
-            <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              placeholder=" Nom "
-            />
-            <input type="email" id="email" name="email" placeholder=" Email " />
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder=" Mot de passe"
-            />
-            <input
-              type="password"
-              id="password-confirmation"
-              name="password-confirmation"
-              placeholder=" Confirmation mot de passe"
-            />
-            <button type="submit" aria-label="soumettre le formulaire">
-              Valider
-            </button>
-          </div>
-        </form>
-      </section>
-    </>
-  );
+
+import PropTypes from "prop-types";
+
+function TemplateForm({data} ) {
+console.log('%c⧭', 'color: #917399', data);
+
+    return (
+        <section className="template-form">
+            <div className="text">
+                <h2>{data.h2}</h2>
+                <p>{data.p}</p>
+            </div>
+            <form className="form">
+                <input type="text" id="firstname" name="firstname" placeholder=" Prénom "/>
+                <input type="text" id="lastname" name="lastname" placeholder=" Nom "/>
+                <input type="email" id="email" name="email" placeholder=" Email "/>
+                <input type="password" id="password" name="password" placeholder=" Mot de passe"/>
+                <input type="password" id="password-confirmation" name="password-confirmation" placeholder=" Confirmation mot de passe"/>
+                <button type="submit" to="/quiz">Valider</button>
+            </form>
+        </section>
+    )
 }
 
+TemplateForm.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      h2: PropTypes.string.isRequired,
+      p: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
+
 export default TemplateForm;
+

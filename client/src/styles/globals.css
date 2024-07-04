@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "./header.css";
 
 /**
  * Smooth scrolling on the whole document
@@ -132,15 +133,14 @@ h4 {
     /* gap: 40px; */
     text-align: center;
     margin: 30px;
-    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .template-form{
-    display: flex;
-    flex-direction: column;
-    width: 70vw; 
-    /* grid-template-columns: 1fr 1fr;
-    height: 70vh; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    max-height: 65vh;
 }
 
 .text{
@@ -155,31 +155,22 @@ h4 {
     }
 }
 
-.form{
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-}
 
-.div-form {
-    
+.form {
+    max-height:65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.7rem;
     background-color: rgba(197, 193, 195, 0.27);
-    padding: 2rem;
-    margin: 30px;
-    width: 60%;
     border-radius: 5px;
+    padding: 15px;
 
     & input {
         height: 3rem;
-        width: 100%;
-        border-radius: 7px;
-        border :1px;
-        /* outline: red; */
+        width: 70%;
+        font-size: 18px;
     }
 
     & button {
@@ -189,5 +180,11 @@ h4 {
         border-radius: 10px;
         width: 30%;
         margin-top: 10px;
+        cursor: pointer;
     }
+}
+
+
+.section-radio{
+    
 }

@@ -3,26 +3,40 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import App from "./App";
 import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
+import FormPageDalt from "./pages/FormPageDalt";
 import QuizPage from "./pages/QuizPage";
 import "./styles/globals-utilities.css";
 import "./styles/globals.css"
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />,
+    path: "",
+    element: <App />,
+    errorElement: <h1>404 Not Found</h1>,
+    children: [
+      {
+        path: "",
+        element: <HomePage />,
+      },
+      {
+        path: "/immersion",
+        element: <FormPage />,
+      },
+      {
+        path: "/immersion-daltonisme",
+        element: <FormPageDalt />,
+      },
+      {
+        path: "/quiz",
+        element: <QuizPage />,
+      }
+    ],
   },
-  {
-    path:"formpage",
-    element: <FormPage />,
-  },
-  {
-    path: "quizpage",
-    element: <QuizPage />,
-  }
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
