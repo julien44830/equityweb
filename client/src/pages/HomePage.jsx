@@ -14,7 +14,7 @@ function HomePage() {
 
                         <h2>Quizz</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="./pages/QuizPage.jsx">Testez vos connaissances</Link>
+                        <Link className="btn btn-default" to="immersion">Testez vos connaissances</Link>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -23,7 +23,7 @@ function HomePage() {
 
                         <h2>Immersion</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="./pages/FormPage.jsx">Immersion</Link>
+                        <Link className="btn btn-default" to="quiz">Immersion</Link>
                     </div>
                 </div>
             </div>
