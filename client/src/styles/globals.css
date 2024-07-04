@@ -66,6 +66,7 @@ h3,
 h4 {
     color: var(--black);
 }
+
 a {
     color: var(--primary);
     transition: all 0.3s ease-in;
@@ -76,6 +77,7 @@ a:hover {
     border-bottom: none;
     color: var(--black);
 }
+
 /*------------------------*/
 /*---------BUTTONS--------*/
 /*------------------------*/
@@ -107,6 +109,64 @@ a:hover {
     background-color: var(--white);
     color: var(--black);
 }
+
+
+/*------------------------*/
+/*---------RADIO BUTTONS--------*/
+/*------------------------*/
+.section-radio {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: var(--radius-big);
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.section-radio legend {
+    visibility: hidden;
+    height: 0;
+}
+
+.section-radio .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.section-radio .radio input {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.section-radio .radio .inputRadioName {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 1.2rem;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.section-radio .radio input:checked+.inputRadioName,
+.section-radio .radio .inputRadioName.active {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: var(--radius-big);
+}
+
 
 /*------------------------*/
 /*---------CARDS---------*/
@@ -209,48 +269,53 @@ a:hover {
     }
 }
 
-.form-item{
-  position: relative;
-  margin-bottom: 15px
-}
-.form-item input{
-  display: block;
-  width: 400px;
-  height: 40px;
-  /* background: transparent; */
-  border: solid 1px #ccc;
-  transition: all .3s ease;
-  padding: 0 15px
-}
-.form-item input:focus{
-  border-color: blue
-}
-.form-item label{
-  position: absolute;
-  cursor: text;
-  /* z-index: 2; */
-  top: 13px;
-  left: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 0 10px;
-  color: #999;
-  transition: all .3s ease
-}
-.form-item input:focus + label,
-.form-item input:valid + label{
-  font-size: 11px;
-  top: -5px
-}
-.form-item input:focus + label{
-  color: blue
+.form-item {
+    position: relative;
+    margin-bottom: 15px
 }
 
-.black-square{
+.form-item input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    /* background: transparent; */
+    border: solid 1px #ccc;
+    transition: all .3s ease;
+    padding: 0 15px
+}
+
+.form-item input:focus {
+    border-color: blue
+}
+
+.form-item label {
+    position: absolute;
+    cursor: text;
+    /* z-index: 2; */
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 11px;
+    top: -5px
+}
+
+.form-item input:focus+label {
+    color: blue
+}
+
+.black-square {
     background-color: black;
     position: absolute;
     right: 0;
     width: 57%;
-    height: 59vh;  
+    height: 59vh;
     z-index: 2;
 }
