@@ -9,14 +9,14 @@ function HomePage() {
                     <div className="encart">
                         <h2>Immersion</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="./pages/FormPage.jsx" />
+                        <Link className="btn btn-default" to="immersion" />
                     </div>
                 </div>
                 <div className="col-md-6">
                     <div className="encart">
                         <h2>Quizz</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="./pages/QuizPage.jsx" />
+                        <Link className="btn btn-default" to="quiz" />
                     </div>
                 </div>
             </div>
