@@ -1,29 +1,36 @@
 import { Link } from "react-router-dom";
-import IconAnimate from '../components/IconAnimate';
-import IconAnimateEye from '../assets/icons/animate/eye-vision.json';
+import Lottie from 'lottie-react';
+
+import IconAnimateBrain from '../assets/icons/animate/brain.json';
 import IconAnimateQuestion from '../assets/icons/animate/question.json';
+import IconAnimateEyeVision from '../assets/icons/animate/eye-vision.json';
+import IconAnimate from '../components/IconAnimate';
 
 function HomePage() {
+    const style = {
+        height: 150,
+    };
     return (
 
         <main className="container">
             <div className="row">
                 <div className="col-md-6">
                     <div className="card">
-                        <IconAnimate animationData={IconAnimateQuestion} height={200} width={200} />
+                        <Lottie animationData={IconAnimateQuestion} loop={1} autoplay={true} style={style} />
 
-                        <h2>Quizz</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="immersion">Testez vos connaissances</Link>
+                        <h2 className="mt-0">Quizz</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta au</p>
+
+                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="immersion">Testez vos connaissances</Link></p>
                     </div>
                 </div>
                 <div className="col-md-6">
                     <div className="card">
-                        <IconAnimate animationData={IconAnimateEye} height={150} width={150} />
+                        <Lottie animationData={IconAnimateBrain} loop={1} autoplay={true}  style={style}  />
 
-                        <h2>Immersion</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta autem delectus natus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <Link className="btn btn-default" to="quiz">Immersion</Link>
+                        <h2 className="mt-0">Immersion</h2>
+                        <p>Lorem ipsum dolorm sam datus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
+                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="quiz">Immersion</Link></p>
                     </div>
                 </div>
             </div>

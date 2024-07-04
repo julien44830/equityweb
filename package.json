@@ -37,6 +37,6 @@
     "validate-branch-name": "^1.3.0"
   },
   "dependencies": {
-    "react-lottie": "^1.2.4"
+    "lottie-react": "^2.4.0"
   }
 }

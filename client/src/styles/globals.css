@@ -18,11 +18,10 @@ html {
     /* Mode 1 */
     /* colors */
     --white: #ffffff;
-    --green: #3ad07f;
     --grey: #d9d9d9;
     --grey-dark: #595959;
     --black: #000000;
-    --primary: #2196f3;
+    --primary: #33CCCC;
     --red: #a00000;
     /* numbers */
     --radius: 0.75rem;
@@ -98,10 +97,10 @@ h4 {
 .card {
     display: flex;
     width: 100%;
-    padding: 1rem 1.25rem;
+    padding: 2rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
     border-radius: var(--radius);
     background-color: var(--white);
     margin: 2rem 0;
@@ -112,6 +111,7 @@ h4 {
 }
 .card:hover {
     transform: scale(1.05);
+        background: var(--primary);
 }
 .card .title-card {
     text-transform: uppercase;
@@ -129,9 +129,7 @@ h4 {
     gap: 1rem;
 }
 
-.card:hover {
-    background: var(--black);
-}
+
 
 .formpage {
     display: flex;
