@@ -21,7 +21,7 @@ function HomePage() {
                         <h2 className="mt-0">Quizz</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta au</p>
 
-                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="immersion">Testez vos connaissances</Link></p>
+                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="quiz">Testez vos connaissances</Link></p>
                     </div>
                 </div>
                 <div className="col-md-6  px-5">
@@ -30,7 +30,7 @@ function HomePage() {
 
                         <h2 className="mt-0">Immersion</h2>
                         <p>Lorem ipsum dolorm sam datus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
-                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="quiz">Immersion</Link></p>
+                        <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="immersion">Immersion</Link></p>
                     </div>
                 </div>
             </div>
