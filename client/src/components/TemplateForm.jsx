@@ -1,9 +1,14 @@
-function TemplateForm (){
+
+import PropTypes from "prop-types";
+
+function TemplateForm({data} ) {
+console.log('%c⧭', 'color: #917399', data);
+
     return (
         <section className="template-form">
             <aside className="text">
-                <h2 tabIndex="0">Déficience à montrer</h2>
-                <p tabIndex="0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe dolores, officiis officia illum consequuntur provident, facilis error quasi sint qui, voluptatum vitae? Illum, veniam et laboriosam earum quo unde libero.</p>
+                <h2>{data.h2}</h2>
+                <p>{data.p}</p>
             </aside>
             <form className="form">
                 <input type="text" id="firstname" name="firstname" aria-label="Prénom" placeholder=" Prénom "/>
@@ -11,10 +16,20 @@ function TemplateForm (){
                 <input type="email" id="email" name="email" placeholder=" Email "/>
                 <input type="password" id="password" name="password" placeholder=" Mot de passe"/>
                 <input type="password" id="password-confirmation" name="password-confirmation" placeholder=" Confirmation mot de passe"/>
-                <button type="submit">Valider</button>
+                <button type="submit" to="/quiz">Valider</button>
             </form>
         </section>
     )
 }
 
+TemplateForm.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      h2: PropTypes.string.isRequired,
+      p: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
+
 export default TemplateForm;
+

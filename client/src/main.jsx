@@ -6,13 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
+import FormPageDalt from "./pages/FormPageDalt";
 import QuizPage from "./pages/QuizPage";
 import "./styles/globals-utilities.css";
 import "./styles/globals.css"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <App />,
     errorElement: <h1>404 Not Found</h1>,
     children: [
@@ -21,11 +22,15 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "immersion",
+        path: "/immersion",
         element: <FormPage />,
       },
       {
-        path: "quiz",
+        path: "/immersion-daltonisme",
+        element: <FormPageDalt />,
+      },
+      {
+        path: "/quiz",
         element: <QuizPage />,
       }
     ],
