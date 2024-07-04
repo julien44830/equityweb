@@ -1,7 +1,8 @@
-function QuizPage (){
+function QuizPage() {
     return (
-        <>
-        </>
+        <main className="container">
+            <p>coucou</p>
+        </main>
     )
 }
 

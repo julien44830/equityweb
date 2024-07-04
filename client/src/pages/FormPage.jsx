@@ -28,9 +28,9 @@ const data = {
 };
 
 function FormPage() {
-  const [handicap, setHandicap] = useState(0);
-  const [component, setComponent] = useState("Trouble")
-  const ComponentToRender = data[component].component; 
+    const [handicap, setHandicap] = useState(0);
+    const [component, setComponent] = useState("Trouble")
+    const ComponentToRender = data[component].component;
 
   return (
     <main className="formpage">

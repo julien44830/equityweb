@@ -110,10 +110,12 @@ h4 {
     transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
     cursor: pointer;
 }
+
 .card:hover {
     transform: scale(1.05);
-        background: var(--primary);
+    background: var(--primary);
 }
+
 .card .title-card {
     text-transform: uppercase;
     margin: 0;
@@ -149,12 +151,13 @@ h4 {
     max-height: 65vh;
 }
 
-.text{
+.text {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     display: flex;
     padding: 17px;
+
     & p {
         width: 40vw;
         text-align: justify;
@@ -163,7 +166,7 @@ h4 {
 
 
 .form {
-    max-height:65vh;
+    max-height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
