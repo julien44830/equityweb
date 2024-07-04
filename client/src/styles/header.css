@@ -6,17 +6,18 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.header-home .logo-header {
+.logo-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   color: black;
   gap: 1rem;
 
+}
+.header-home .logo-header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .logo-header img {
