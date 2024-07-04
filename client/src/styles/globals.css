@@ -129,7 +129,8 @@ h4 {
 .formpage{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    /* gap: 40px; */
     text-align: center;
     margin: 30px;
     max-height: 100vh;
@@ -143,11 +144,17 @@ h4 {
 }
 
 .text{
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    padding: 17px;
     & p {
+        width: 40vw;
         text-align: justify;
-        padding: 30px;
     }
 }
+
 
 .form {
     max-height:65vh;
@@ -155,7 +162,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
     background-color: rgba(197, 193, 195, 0.27);
     border-radius: 5px;
     padding: 15px;
