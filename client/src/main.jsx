@@ -13,7 +13,7 @@ import "./styles/globals.css"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <App />,
     errorElement: <h1>404 Not Found</h1>,
     children: [
