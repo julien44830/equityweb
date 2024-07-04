@@ -1,12 +1,10 @@
 .header {
   width: 100vw;
-  height: 60px;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #990000;
 }
 
 .header-home .logo-header {
@@ -14,18 +12,38 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 150px;
-  height: 50px;
+  width: 80px;
   left: 50%;
   transform: translate(-50%);
   color: black;
-  background-color: #fff;
+  gap: 1rem;
+
+}
+
+.logo-header .baseline {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.logo-header .baseline span {
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius);
+  margin-left: 0.5rem;
 }
 
 .navlink-header {
-  color: white;
+  color: var(--primary);
+  font-weight: var(--font-weight-bold);
 }
 
+.navlink-header:hover {
+  text-decoration: none;
+  border-bottom: none;
+
+}
 
 .header-home .nav-header {
   color: red;

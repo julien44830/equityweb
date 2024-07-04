@@ -7,7 +7,11 @@ function Header() {
     return (
 
         <header className={`header ${location.pathname === "/" ? "header-home" : "header-global"}`}>
-            <p className="logo-header"> <NavLink className="navlink-header" to="/">header</NavLink></p>
+            <NavLink className="logo-header" to="/" >
+                <img src="../src/assets/icons/logo-equity-web.svg" alt="logo" />
+                <span className="baseline">Equity<span>Web</span>
+                </span>
+            </NavLink>
             <nav className="nav-header" >
                 <NavLink className="navlink-header" to="/quiz">
                     Quiz
