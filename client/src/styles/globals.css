@@ -30,7 +30,21 @@ html {
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
+[data-expand-target] {
+    overflow: hidden;
+    position: relative;
+}
 
+[data-expand-link]:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: -250px;
+}
 /*-----------------------------------*/
 
 html {
