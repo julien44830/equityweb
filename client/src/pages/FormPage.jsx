@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import TemplateForm from "../components/TemplateForm";
 import NavForm from "../components/NavForm";
 import BlindForm from "../components/BlindForm";
-import Aveugle from "../components/Aveugle";
+// import Aveugle from "../components/Aveugle";
 import Daltonien from "../components/Daltonien";
 import Trouble from "../components/Trouble";
 
 const data = {
-  Aveugle : {
-    component : Cécité,
+  BlindForm : {
+    component : BlindForm,
     name: "Cécité",
     h2: "Cécité",
     p: "Nous vous proposons d'expérimenter le remplissage du formulaire caché à droite en se mettant à la place d'une personne aveugle. Pour cette immersion, télécharger le lecteur d'écran NVDA.",
@@ -34,10 +34,9 @@ function FormPage() {
 
   return (
     <main className="formpage">
-      <h1>Découvrez la réalité du handicap sur internet</h1>
+      <h1 tabIndex="0">Découvrez la réalité du handicap sur internet</h1>
       <NavForm setHandicap={setHandicap} setComponent={setComponent} handicap={handicap} />
-      {/* <TemplateForm data={data[component]} /> */}
-      <BlindForm data={data[component]} />
+      <TemplateForm data={data[component]} />
       {ComponentToRender && <ComponentToRender />}
     </main>
   );

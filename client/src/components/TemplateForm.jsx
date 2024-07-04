@@ -7,8 +7,8 @@ console.log('%c⧭', 'color: #917399', data);
     return (
         <section className="template-form">
             <aside className="text">
-                <h2>{data.h2}</h2>
-                <p>{data.p}</p>
+                <h2 tabIndex="0">{data.h2}</h2>
+                <p tabIndex="0">{data.p}</p>
             </aside>
             <form className="form">
                 <input type="text" id="firstname" name="firstname" aria-label="Prénom" placeholder=" Prénom "/>
