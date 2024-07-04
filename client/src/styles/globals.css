@@ -148,7 +148,6 @@ h4 {
     }
 }
 
-
 .form {
     max-height:65vh;
     display: flex;
@@ -163,6 +162,7 @@ h4 {
     & input {
         height: 3rem;
         width: 70%;
+        font-size: 18px;
     }
 
     & button {
@@ -172,5 +172,6 @@ h4 {
         border-radius: 10px;
         width: 30%;
         margin-top: 10px;
+        cursor: pointer;
     }
 }
