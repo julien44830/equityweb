@@ -1,0 +1,37 @@
+.header-home {
+    width: 100vw;
+    height: 60px;
+    padding: 20px;
+padding-left: 40px;
+padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #990000;
+  }
+
+  .navlink-header {
+    color: white;
+    padding-right: 75px;
+}
+
+  .header-global {
+    width: 100vw;
+    height: 60px;
+    padding: 20px;
+padding-left: 40px;
+padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #990000;
+  
+  }
+
+  .nav-header {
+    color: red;
+    display: flex;
+    flex-direction: row;
+  }
