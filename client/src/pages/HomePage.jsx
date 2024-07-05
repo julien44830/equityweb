@@ -18,8 +18,8 @@ function HomePage() {
                     <div className="card" data-expand-target>
                         <Lottie animationData={IconAnimateQuestion} loop={1} autoplay={true} style={style} />
 
-                        <h2 className="mt-0" tabIndex="0">Quizz</h2>
-                        <p tabIndex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eos, optio rem facilis ipsam dicta au</p>
+                        <h2 className="mt-0">Quizz</h2>
+                        <p>Testez votre compréhension en matière d'inclusivité en répondant à un quizz de 20 questions.</p>
 
                         <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="quiz" data-expand-link>Testez vos connaissances</Link></p>
                     </div>
@@ -28,8 +28,8 @@ function HomePage() {
                     <div className="card" data-expand-target>
                         <Lottie animationData={IconAnimateBrain} loop={1} autoplay={true} style={style} />
 
-                        <h2 className="mt-0" tabIndex="0">Immersion</h2>
-                        <p tabIndex="0">Lorem ipsum dolorm sam datus eligendi officia quos alias facere suscipit quo ex ad veniam porro ea.</p>
+                        <h2 className="mt-0">Immersion</h2>
+                        <p>Essayez une expérience immersive sur les problèmes rencontrés par certains types de handicaps sur le web.</p>
                         <p className="d-flex w-100 justify-content-end"><Link className="btn btn-default" to="immersion" data-expand-link>Immersion</Link></p>
                     </div>
                 </div>
