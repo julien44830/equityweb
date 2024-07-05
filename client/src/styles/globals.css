@@ -279,10 +279,8 @@ a:hover {
 
     & button {
         height: 3rem;
-        background-color: #3ad07f;
         border: none;
-        border-radius: 10px;
-        width: 30%;
+        width: 20%;
         margin-top: 10px;
         cursor: pointer;
     }
