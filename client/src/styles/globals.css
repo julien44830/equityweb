@@ -342,12 +342,15 @@ a:hover {
 
 
 .dalto {
-    width: 100vw;
-    height: 100vh;
-    background-color: #00ff006e; /* Couleur de fond verte */
-    filter: grayscale(100%) contrast(100%) hue-rotate(280deg); /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+    width: 50%;
+    height: 60vh;
+    background-color: #00ff006e;
+    /* Couleur de fond verte */
+    filter: grayscale(100%) contrast(100%) hue-rotate(280deg);
+    /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
     z-index: 10;
-    top: 0;
     pointer-events: none;
-  }
+}
