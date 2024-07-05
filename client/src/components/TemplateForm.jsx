@@ -74,23 +74,23 @@ function TemplateForm({ data, component }) {
           <div className="custom-cursor" ref={cursorRef} />
           <form className="form">
              <div class="form-item">
-            <input type="text" id="firstname" name="firstname"/>
+            <input type="text" id="firstname" name="firstname" required/>
             <label htmlFor="firstname">Prénom</label>
             </div>
             <div className="form-item">
-            <input type="text" id="lastname" name="lastname"/>
+            <input type="text" id="lastname" name="lastname" required/>
             <label htmlFor="lastname">Nom</label>
             </div>
             <div className="form-item">
-            <input type="email" id="email" name="email"/>
+            <input type="email" id="email" name="email" required/>
             <label htmlFor="email">Email</label>
             </div>
             <div className="form-item">
-            <input type="password" id="password" name="password"/>
+            <input type="password" id="password" name="password" required/>
             <label htmlFor="password">Mot de passe</label>
             </div>
             <div className="form-item">
-            <input type="password" id="password-confirmation" name="password-confirmation"/>
+            <input type="password" id="password-confirmation" name="password-confirmation" required/>
             <label htmlFor="password-confirmation">Confirmation mot de passe</label>
             </div>
             <button type="submit" className="btn btn-default">Valider</button>
@@ -99,23 +99,23 @@ function TemplateForm({ data, component }) {
       ) : (
         <form className="form">
           <div class="form-item">
-          <input type="text" id="firstname" name="firstname"/>
+          <input type="text" id="firstname" name="firstname" required/>
           <label htmlFor="firstname">Prénom</label>
           </div>
           <div class="form-item">
-          <input type="text" id="lastname" name="lastname"/>
+          <input type="text" id="lastname" name="lastname" required/>
           <label htmlFor="lastname">Nom</label>
           </div>
           <div class="form-item">
-          <input type="email" id="email" name="email"/>
+          <input type="email" id="email" name="email" required/>
           <label htmlFor="email">Email</label>
           </div>
           <div className="form-item">
-          <input type="password" id="password" name="password"/>
+          <input type="password" id="password" name="password" required/>
           <label htmlFor="password">Mot de passe</label>
           </div>
           <div className="form-item">
-          <input type="password" id="password-confirmation" name="password-confirmation"/>
+          <input type="password" id="password-confirmation" name="password-confirmation" required/>
           <label htmlFor="password-confirmation">Confirmation mot de passe</label>
           </div>
           <button type="submit" className="btn btn-default">Valider</button>
