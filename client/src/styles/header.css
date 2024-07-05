@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,6 +49,7 @@
 .navlink-header {
   color: var(--primary);
   font-weight: var(--font-weight-bold);
+  font-size: 1.3rem;
 
 }
 
