@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <FormPageDalt />,
       },
       {
-        path: "/pascal",
+        path: "/eye-tracking",
         element: <EyeTrackingForm />,
       },
       {

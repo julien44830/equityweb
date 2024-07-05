@@ -4,8 +4,6 @@ import NavForm from "../components/NavForm";
 import BlindForm from "../components/BlindForm";
 import Daltonien from "../components/Daltonien";
 import AnimateForm from '../components/AnimateForm'
-import Trouble from "../components/Trouble";
-
 
 const data = {
   BlindForm : {
@@ -34,10 +32,16 @@ const data = {
   },
 };
 
+
+
 function FormPage() {
     const [handicap, setHandicap] = useState(0);
     const [component, setComponent] = useState("Parkison")
     const ComponentToRender = data[component].component;
+
+    
+
+    
 
   return (
     <main className="formpage">

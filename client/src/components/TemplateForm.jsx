@@ -63,6 +63,8 @@ function TemplateForm({ data, component }) {
         };
     }, []);
 
+    
+
   return (
     <section className="template-form">
       <aside className="text">
