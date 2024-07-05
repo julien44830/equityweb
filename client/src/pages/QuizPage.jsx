@@ -11,7 +11,7 @@ function QuizPage() {
 
 
     return (
-        <main className="container">
+        <main className="container formpage">
             <Question data={data[numb]} setNumb={setNumb} numb={numb}/>
         </main>
     )

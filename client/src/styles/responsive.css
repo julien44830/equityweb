@@ -5,24 +5,73 @@
 /*==========  Mobile First Method  ==========*/
 @media only screen and (min-width: 320px) {
     h1 {
-        font-size: 2.6rem;
+        font-size: 2rem;
         position: relative;
+        text-align: center;
     }
 
     h2 {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 2rem;
-    }
-
-    h4 {
         font-size: 1.6rem;
     }
 
+    h4 {
+        font-size: 1.4rem;
+    }
+
     h5 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .text {
+        padding: 2rem;
+    }
+
+    .card {
+        padding: 0 2rem 2rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 0;
+        gap: 2rem;
+    }
+
+    .header .nav-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .section-radio-vertical .label-radio input[type="radio"] {
+        width: 22px;
+        height: 22px;
+    }
+
+    .section-radio {
+        font-size: 1rem;
+    }
+
+    .formpage {
+        padding-bottom: 2rem;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    .section-radio-vertical label {
+        display: inline-block;
+    }
+
+    .form-item input {
+        width: 100%;
     }
 }
 
@@ -35,17 +84,92 @@
         justify-content: space-between;
         height: 100vh;
     }
+
+    .text {
+        padding: 4rem;
+    }
+
+    .card {
+        padding: 1rem 2rem 2rem;
+    }
+
+    h1 {
+        position: relative;
+        text-align: left;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2rem 0;
+        gap: 0;
+        /* width: 99vw; */
+    }
+
+    .header .nav-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .form {
+        text-align: left;
+    }
+
+    .formpage {
+        padding-bottom: 0;
+    }
+
+    .form-item input {
+        width: 400px;
+    }
+
     .section-radio {
         max-width: 50%;
     }
-    #root main {
+
+    .section-radio-vertical label {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-radio-vertical label {
+        padding: 0 2rem;
+    }
+
+    .section-radio-vertical .label-radio input[type="radio"] {
+        width: 28px;
+        height: 28px;
+    }
+
+    #root ma.section-radio-vertical label {
+        position: relative;
+        padding: 0 2rem;
+        cursor: pointer;
+    }
+
+    in {
         flex: 1;
     }
 
     main.container {
         display: flex;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .formpage {
+        height: 100%;
+    }
+
+    .header-home .logo-header {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -53,4 +177,13 @@
 
 @media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .section-radio {
+        font-size: 1.2rem;
+        max-width: 50%;
+    }
+}

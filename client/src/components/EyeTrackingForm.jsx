@@ -84,7 +84,7 @@ function EyeTrackingForm({ setComponent }) {
                 </fieldset >
             </hgroup>
             <section className="row template-form">
-                <div className="text">
+                <aside className="text col-md-6">
                     <h2>Tétraplégie</h2>
                     <section className="text-display-eye">
                         <aside>
@@ -101,35 +101,36 @@ function EyeTrackingForm({ setComponent }) {
                                 Nous vous conseillons de vous mettre dans des conditions d'une personne tétraplégique, et de ne pas bouger la tête lors de la calibration du <acronym title="En français suivi de l'oeil" lang='fr'>eye tracker</acronym>. < br />
                             </p></aside>
                     </section>
-                    <button className="btn btn-default" onClick={startEyeTracking}>Débuter le test</button>
+                    <button className="btn btn-default mt-4" onClick={startEyeTracking}>Débuter le test</button>
                     <div id="GazeData" />
                     <div id="HeadPoseData" />
                     <div id="HeadRotData" />
+                </aside>
+                <div className="col-md-6">
+                    <form className="form">
+                        <div className="form-item">
+                            <input type="text" id="firstname" name="firstname" required />
+                            <label htmlFor="firstname">Prénom</label>
+                        </div>
+                        <div className="form-item">
+                            <input type="text" id="lastname" name="lastname" required />
+                            <label htmlFor="lastname">Nom</label>
+                        </div>
+                        <div className="form-item">
+                            <input type="email" id="email" name="email" required />
+                            <label htmlFor="email">Email</label>
+                        </div>
+                        <div className="form-item">
+                            <input type="password" id="password" name="password" required />
+                            <label htmlFor="password">Mot de passe</label>
+                        </div>
+                        <div className="form-item">
+                            <input type="password" id="password-confirmation" name="password-confirmation" required />
+                            <label htmlFor="password-confirmation">Confirmation mot de passe</label>
+                        </div>
+                        <button className="btn btn-default mt-4" type="submit">Valider</button>
+                    </form>
                 </div>
-                <form className="form">
-                    <div className="form-item">
-                        <input type="text" id="firstname" name="firstname" required />
-                        <label htmlFor="firstname">Prénom</label>
-                    </div>
-                    <div className="form-item">
-                        <input type="text" id="lastname" name="lastname" required />
-                        <label htmlFor="lastname">Nom</label>
-                    </div>
-                    <div className="form-item">
-                        <input type="email" id="email" name="email" required />
-                        <label htmlFor="email">Email</label>
-                    </div>
-                    <div className="form-item">
-                        <input type="password" id="password" name="password" required />
-                        <label htmlFor="password">Mot de passe</label>
-                    </div>
-                    <div className="form-item">
-                        <input type="password" id="password-confirmation" name="password-confirmation" required />
-                        <label htmlFor="password-confirmation">Confirmation mot de passe</label>
-                    </div>
-                    <button className="btn btn-default" type="submit">Valider</button>
-                </form>
-
                 <div id="point-rouge" className={eyeTracker ? "red-point" : "not-red-point"}></div>
             </section>
         </main >
