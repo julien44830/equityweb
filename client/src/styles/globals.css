@@ -49,7 +49,7 @@ body * {
 }
 
 /*-----------------------------------*/
-    {
+{
     font-family: "Poppins", sans-serif;
     font-weight: var(--font-weight-normal);
     font-style: normal;
@@ -491,6 +491,10 @@ a:hover {
     }
 }
 
+.btn-default{
+    width: 20vw;
+}
+
 .form-item {
     position: relative;
     margin-bottom: 15px
@@ -517,7 +521,7 @@ a:hover {
     font-size: 12px;
     font-weight: bold;
     padding: 0 10px;
-    color: #999;
+    color: #676767;
     transition: all .3s ease
 }
 
