@@ -15,7 +15,7 @@ function NavForm({ setHandicap, setComponent }) {
     <fieldset role="radiogroup" onChange={selectHandicap} className="section-radio">
       <legend>Selectionnez votre handicap:</legend>
       <label className="radio" htmlFor="cecite">
-        <input type="radio" id="cecite" name="handicap" value="BlindForm" />
+        <input type="radio" id="cecite" name="handicap" value="BlindForm"/>
         <span className="inputRadioName">Cécité</span></label>
 
       <label className="radio" htmlFor="daltonisme">

@@ -8,7 +8,7 @@ function Header() {
 
         <header className={`header ${location.pathname === "/" ? "header-home" : "header-global"}`}>
             <NavLink className="logo-header" to="/" >
-                <img src="../src/assets/icons/logo-equity-web.svg" alt="logo" />
+                <img src="../src/assets/icons/logo-equity-web.svg" alt="equityweb-logo" />
                 <span className="baseline">Equity<span>Web</span>
                 </span>
             </NavLink>
