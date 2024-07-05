@@ -30,6 +30,7 @@ html {
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
+
 [data-expand-target] {
     overflow: hidden;
     position: relative;
@@ -45,6 +46,7 @@ html {
     z-index: 10;
     margin: -250px;
 }
+
 /*-----------------------------------*/
 
 html {
@@ -331,4 +333,33 @@ a:hover {
     width: 57%;
     height: 59vh;
     z-index: 2;
+}
+
+.shaking-cursor-div {
+    height: 150px;
+    width: 650px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+}
+
+.custom-cursor {
+    width: 14px;
+    /* La taille de votre curseur personnalisé */
+    height: 14px;
+    /* La taille de votre curseur personnalisé */
+    background: url('../assets/icons/cursor-white.svg') no-repeat center center;
+    /* background-color: #000; */
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    z-index: 10;
+    transition: transform 0.03s ease-in-out;
+
 }
