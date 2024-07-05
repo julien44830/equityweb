@@ -3,7 +3,7 @@ function BlindForm (){
         <section className="template-form">
             <aside className="text">
                 <h2 tabIndex="0">Cécité</h2>
-                <p tabIndex="0">Nous vous proposons d'expérimenter le remplissage du formulaire caché à droite en se mettant à la place d'une personne aveugle. Pour cette immersion, télécharger le lecteur d'écran NVDA.</p>
+                <p tabIndex="0">Nous vous proposons d'expérimenter le remplissage du formulaire caché à droite en se mettant à la place d'une personne aveugle. Pour cette immersion, télécharger le lecteur d'écran NVDA et naviguez le site au clavier.</p>
             </aside>
             <form class="form">
                 <div class="form-item">
@@ -26,7 +26,7 @@ function BlindForm (){
                     <input type="password" id="password-confirmation" required/>
                     <label htmlFor="password-confirmation">Confirmation mot de passe</label>
                 </div>
-                <button type="submit">Valider</button>
+                <button type="submit" className="btn btn-default">Valider</button>
             </form>
             <div className="black-square">
             </div>

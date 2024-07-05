@@ -73,32 +73,52 @@ function TemplateForm({ data, component }) {
         <div className="shaking-cursor-div" ref={divRef}>
           <div className="custom-cursor" ref={cursorRef} />
           <form className="form">
+             <div class="form-item">
+            <input type="text" id="firstname" name="firstname" required/>
             <label htmlFor="firstname">Prénom</label>
-            <input type="text" id="firstname" name="firstname" aria-label="Prénom" placeholder=" Prénom " />
+            </div>
+            <div className="form-item">
+            <input type="text" id="lastname" name="lastname" required/>
             <label htmlFor="lastname">Nom</label>
-            <input type="text" id="lastname" name="lastname" placeholder=" Nom " />
+            </div>
+            <div className="form-item">
+            <input type="email" id="email" name="email" required/>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder=" Email " />
+            </div>
+            <div className="form-item">
+            <input type="password" id="password" name="password" required/>
             <label htmlFor="password">Mot de passe</label>
-            <input type="password" id="password" name="password" placeholder=" Mot de passe" />
+            </div>
+            <div className="form-item">
+            <input type="password" id="password-confirmation" name="password-confirmation" required/>
             <label htmlFor="password-confirmation">Confirmation mot de passe</label>
-            <input type="password" id="password-confirmation" name="password-confirmation" placeholder=" Confirmation mot de passe" />
-            <button type="submit">Valider</button>
+            </div>
+            <button type="submit" className="btn btn-default">Valider</button>
           </form>
         </div>
       ) : (
         <form className="form">
+          <div class="form-item">
+          <input type="text" id="firstname" name="firstname" required/>
           <label htmlFor="firstname">Prénom</label>
-          <input type="text" id="firstname" name="firstname" aria-label="Prénom" placeholder=" Prénom " />
+          </div>
+          <div class="form-item">
+          <input type="text" id="lastname" name="lastname" required/>
           <label htmlFor="lastname">Nom</label>
-          <input type="text" id="lastname" name="lastname" placeholder=" Nom " />
+          </div>
+          <div class="form-item">
+          <input type="email" id="email" name="email" required/>
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder=" Email " />
+          </div>
+          <div className="form-item">
+          <input type="password" id="password" name="password" required/>
           <label htmlFor="password">Mot de passe</label>
-          <input type="password" id="password" name="password" placeholder=" Mot de passe" />
+          </div>
+          <div className="form-item">
+          <input type="password" id="password-confirmation" name="password-confirmation" required/>
           <label htmlFor="password-confirmation">Confirmation mot de passe</label>
-          <input type="password" id="password-confirmation" name="password-confirmation" placeholder=" Confirmation mot de passe" />
-          <button type="submit">Valider</button>
+          </div>
+          <button type="submit" className="btn btn-default">Valider</button>
         </form>
       )}
     </section>

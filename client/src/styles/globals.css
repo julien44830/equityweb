@@ -232,9 +232,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 40px; */
     text-align: center;
-    margin: 30px;
     max-height: 100vh;
 }
 
@@ -279,10 +277,8 @@ a:hover {
 
     & button {
         height: 3rem;
-        background-color: #3ad07f;
         border: none;
-        border-radius: 10px;
-        width: 30%;
+        width: 20%;
         margin-top: 10px;
         cursor: pointer;
     }
@@ -297,15 +293,14 @@ a:hover {
     display: block;
     width: 400px;
     height: 40px;
-    /* background: transparent; */
     border: solid 1px #ccc;
     transition: all .3s ease;
     padding: 0 15px
 }
 
-.form-item input:focus {
+/* .form-item input:focus {
     border-color: blue
-}
+} */
 
 .form-item label {
     position: absolute;
@@ -327,7 +322,7 @@ a:hover {
 }
 
 .form-item input:focus+label {
-    color: blue
+    color: #33CCCC;
 }
 
 .black-square {
@@ -353,4 +348,4 @@ a:hover {
     /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
     z-index: 10;
     pointer-events: none;
-}
+  }
