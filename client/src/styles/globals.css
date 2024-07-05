@@ -30,6 +30,7 @@ html {
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
+
 [data-expand-target] {
     overflow: hidden;
     position: relative;
@@ -45,6 +46,7 @@ html {
     z-index: 10;
     margin: -250px;
 }
+
 /*-----------------------------------*/
 
 html {
@@ -131,6 +133,8 @@ a:hover {
 .section-radio {
     position: relative;
     display: flex;
+    margin-top: 20px;
+    translate: -430px;
     flex-wrap: wrap;
     border-radius: var(--radius-big);
     background-color: #EEE;
