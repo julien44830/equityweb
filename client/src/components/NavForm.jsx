@@ -1,11 +1,7 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-function NavForm({ setHandicap, setComponent }) {
-
-
-
-
+function NavForm({ setComponent }) {
 
   const selectHandicap = (e) => {
     setComponent(e.target.value)
@@ -39,7 +35,6 @@ function NavForm({ setHandicap, setComponent }) {
 }
 
 NavForm.propTypes = {
-  // setHandicap: PropTypes.func.isRequired,
   setComponent: PropTypes.func.isRequired,
 };
 

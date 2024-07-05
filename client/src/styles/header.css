@@ -1,10 +1,6 @@
 .header {
-  /* width: 99vw; */
-  padding: 2rem 2rem 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  /* width: 99vw; */
 }
 .logo-header {
   display: flex;
@@ -14,11 +10,7 @@
   gap: 1rem;
 
 }
-.header-home .logo-header {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
+
 
 .logo-header img {
   width: 80px;
@@ -47,20 +39,21 @@
 }
 
 .navlink-header {
-  color: var(--primary);
+  color: var(--black);
   font-weight: var(--font-weight-bold);
   font-size: 1.3rem;
-
+  border-bottom: 3px solid var(--primary);
+  transition: all 0.3s ease-out;
 }
 
 .navlink-header:hover {
   text-decoration: none;
   border-bottom: none;
+  border-bottom: 3px solid var(--black);
 }
 
 
 .header-home .nav-header {
-  color: red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
