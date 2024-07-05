@@ -395,6 +395,8 @@ a:hover {
     & p {
         width: 40vw;
         text-align: justify;
+        font-size: 20px;
+        margin: 15px;
     }
 }
 
@@ -479,4 +481,13 @@ a:hover {
     /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
     z-index: 10;
     pointer-events: none;
+  }
+
+  :focus-visible{
+    border: solid #33CCCC;
+    outline-style: dashed;
+    outline-color:  white;
+    outline-width: 3px;
+    outline-offset: 4px;
+    padding: 15px;
   }

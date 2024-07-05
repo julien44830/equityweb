@@ -63,8 +63,6 @@ function TemplateForm({ data, component }) {
         };
     }, []);
 
-    
-
   return (
     <section className="template-form">
       <aside className="text">
@@ -100,15 +98,15 @@ function TemplateForm({ data, component }) {
         </div>
       ) : (
         <form className="form">
-          <div class="form-item">
+          <div className="form-item">
           <input type="text" id="firstname" name="firstname" required/>
           <label htmlFor="firstname">Prénom</label>
           </div>
-          <div class="form-item">
+          <div className="form-item">
           <input type="text" id="lastname" name="lastname" required/>
           <label htmlFor="lastname">Nom</label>
           </div>
-          <div class="form-item">
+          <div className="form-item">
           <input type="email" id="email" name="email" required/>
           <label htmlFor="email">Email</label>
           </div>
