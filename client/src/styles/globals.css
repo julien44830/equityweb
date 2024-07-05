@@ -394,7 +394,7 @@ a:hover {
     padding: 17px;
     & p {
         width: 40vw;
-        text-align: justify;
+        text-align: start;
         font-size: 20px;
         margin: 15px;
     }
