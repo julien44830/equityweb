@@ -417,6 +417,10 @@ a:hover {
     }
 }
 
+.btn-default{
+    width: 20vw;
+}
+
 .form-item {
     position: relative;
     margin-bottom: 15px
@@ -443,7 +447,7 @@ a:hover {
     font-size: 12px;
     font-weight: bold;
     padding: 0 10px;
-    color: #999;
+    color: #676767;
     transition: all .3s ease
 }
 
@@ -479,5 +483,14 @@ a:hover {
     filter: grayscale(100%) contrast(100%) hue-rotate(280deg);
     /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
     z-index: 10;
-    pointer-events: none;
-}
+  }
+
+  :focus-visible{
+    border: solid #33CCCC;
+    border-radius: 5px;
+    outline-style: dashed;
+    outline-color:  white;
+    outline-width: 3px;
+    outline-offset: 4px;
+    padding: 15px;
+  }

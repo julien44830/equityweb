@@ -63,7 +63,7 @@ function TemplateForm({ data, component }) {
     };
   }, []);
 
-
+    
 
   return (
     <section className="row template-form">

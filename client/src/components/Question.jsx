@@ -26,7 +26,7 @@ function Question({ data, setNumb, numb }) {
 
   return (
     <section className="question">
-      <h2>{data.Question}</h2>
+      <h1>{data.Question}</h1>
 
       
       <fieldset role="radiogroup" className="section-radio-vertical">
