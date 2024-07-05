@@ -1,5 +1,5 @@
 function Daltonien(){
-  return <p>coucou3</p>
+  return <div className="dalto">{" "}</div>
 
 }
 

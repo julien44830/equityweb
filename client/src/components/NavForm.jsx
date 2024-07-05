@@ -6,7 +6,6 @@ function NavForm({ setHandicap, setComponent }) {
 
   const selectHandicap = (e) => {
     setComponent(e.target.value)
-    // setHandicap(e.target.value);
   };
 
   return (
@@ -23,6 +22,10 @@ function NavForm({ setHandicap, setComponent }) {
       <label className="radio" htmlFor="trouble">
         <input type="radio" id="trouble" name="handicap" value="Trouble" />
         <span className="inputRadioName">Trouble de l'attention</span></label>
+
+      <label className="radio" htmlFor="parkison">
+        <input type="radio" id="parkison" name="handicap" value="Parkison" />
+        <span className="inputRadioName">Parkison</span></label>
     </fieldset>
   );
 }
