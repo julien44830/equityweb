@@ -59,7 +59,11 @@ h3,
 strong {
     font-weight: var(--font-weight-bold);
 }
-h1,
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 h2,
 h3,
 h4 {
@@ -381,6 +385,7 @@ a:hover {
     align-items: center;
     text-align: center; */
     max-height: 100vh;
+    margin-top: 3rem;
 }
 .template-form {
     display: grid;
