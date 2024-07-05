@@ -1,5 +1,5 @@
 .header {
-  width: 99vw;
+  /* width: 99vw; */
   padding: 2rem 2rem 0;
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@
 }
 
 .logo-header .baseline span {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
   padding: 0.3rem 1rem;
   border-radius: var(--radius);

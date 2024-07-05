@@ -64,7 +64,7 @@ function TemplateForm({ data, component }) {
     }, []);
 
   return (
-    <section className="template-form">
+    <section className="row template-form">
       <aside className="text">
         <h2 tabIndex="0">{data.h2}</h2>
         <p tabIndex="0">{data.p}</p>
@@ -73,7 +73,7 @@ function TemplateForm({ data, component }) {
         <div className="shaking-cursor-div" ref={divRef}>
           <div className="custom-cursor" ref={cursorRef} />
           <form className="form">
-             <div class="form-item">
+            <div className="form-item">
             <input type="text" id="firstname" name="firstname" required/>
             <label htmlFor="firstname">Prénom</label>
             </div>
