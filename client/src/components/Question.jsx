@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Question({ data }) {
+function Question({ data, setNumb, numb }) {
   console.log('%c⧭', 'color: #1d3f73', data);
   const [reponse, setReponse] = useState("");
   console.log('%c⧭', 'color: #997326', "reponse", reponse);
@@ -14,7 +14,15 @@ function Question({ data }) {
     if (data.reponse === reponse) {
       console.log("gagné");
     }
-  }, [reponse, data.reponse]);
+
+    if(numb===19){
+      setNumb( 0)
+    }
+  }, [reponse, data.reponse], numb);
+  
+  const cuntNum= ()=>{
+    setNumb(numb +1)
+  }
 
   return (
     <section className="question">
@@ -55,7 +63,7 @@ function Question({ data }) {
           <span className="inputRadioName">{data.Proposition3}</span>
         </label>
       </fieldset>
-      <button type="button" className="btn btn-default">Question suivante</button>
+      <button type="button" className="btn btn-default" onClick={cuntNum}>Question suivante</button>
     </section>
   );
 }
