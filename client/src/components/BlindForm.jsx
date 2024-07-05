@@ -28,8 +28,8 @@ function BlindForm (){
                 </div>
                 <button type="submit" className="btn btn-default">Valider</button>
             </form>
-            {/* <div className="black-square">
-            </div> */}
+            <div className="black-square">
+            </div>
         </section>
     )
 }
