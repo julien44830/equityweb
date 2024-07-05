@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./pages/HomePage";
 import FormPage from "./pages/FormPage";
-import FormPageDalt from "./pages/FormPageDalt";
 import QuizPage from "./pages/QuizPage";
 import EyeTrackingForm from "./components/EyeTrackingForm";
 import "./styles/globals-utilities.css";

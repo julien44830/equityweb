@@ -50,39 +50,40 @@ function EyeTrackingForm({ setComponent }) {
 
     return (
         <main className="container-fluid formpage">
-            <h1 tabIndex="0">Découvrez la réalité du handicap sur internet</h1>
-            <fieldset role="radiogroup" onChange={selectHandicap} className="section-radio">
-                <legend>Selectionnez votre handicap:</legend>
-                <NavLink to="/immersion">
-                    <label className="radio" htmlFor="cecite">
-                        <input type="radio" id="cecite" name="handicap" value="BlindForm" />
-                        <span className="inputRadioName">Cécité</span></label>
-                </NavLink>
+            <hgroup className="row">
+                <h1 tabIndex="0">Découvrez la réalité du handicap sur internet</h1>
+                <fieldset role="radiogroup" onChange={selectHandicap} className="section-radio">
+                    <legend>Selectionnez votre handicap:</legend>
+                    <NavLink to="/immersion">
+                        <label className="radio" htmlFor="cecite">
+                            <input type="radio" id="cecite" name="handicap" value="BlindForm" />
+                            <span className="inputRadioName">Cécité</span></label>
+                    </NavLink>
 
-                <NavLink to="/immersion">
-                    <label className="radio" htmlFor="daltonisme">
-                        <input type="radio" id="daltonisme" name="handicap" value="Daltonien" />
-                        <span className="inputRadioName">Daltonisme</span></label>
-                </NavLink>
+                    <NavLink to="/immersion">
+                        <label className="radio" htmlFor="daltonisme">
+                            <input type="radio" id="daltonisme" name="handicap" value="Daltonien" />
+                            <span className="inputRadioName">Daltonisme</span></label>
+                    </NavLink>
 
-                <NavLink to="/immersion">
-                    <label className="radio" htmlFor="trouble">
-                        <input type="radio" id="trouble" name="handicap" value="Trouble" />
-                        <span className="inputRadioName">Trouble de l'attention</span></label>
-                </NavLink>
+                    <NavLink to="/immersion">
+                        <label className="radio" htmlFor="trouble">
+                            <input type="radio" id="trouble" name="handicap" value="Trouble" />
+                            <span className="inputRadioName">Trouble de l'attention</span></label>
+                    </NavLink>
 
-                <NavLink to="/immersion">
-                    <label className="radio" htmlFor="parkison">
-                        <input type="radio" id="parkison" name="handicap" value="Parkison" />
-                        <span className="inputRadioName">Parkison</span></label>
-                </NavLink>
+                    <NavLink to="/immersion">
+                        <label className="radio" htmlFor="parkison">
+                            <input type="radio" id="parkison" name="handicap" value="Parkison" />
+                            <span className="inputRadioName">Parkison</span></label>
+                    </NavLink>
 
-                <label className="radio" htmlFor="tetraplegie">
-                    <input checked="checked" type="radio" id="tetraplegie" name="handicap" value="tetraplegie" />
-                    <span className="inputRadioName">Tétraplégie</span></label>
-            </fieldset >
-
-            <section className="template-form">
+                    <label className="radio" htmlFor="tetraplegie">
+                        <input checked="checked" type="radio" id="tetraplegie" name="handicap" value="tetraplegie" />
+                        <span className="inputRadioName">Tétraplégie</span></label>
+                </fieldset >
+            </hgroup>
+            <section className="row template-form">
                 <div className="text">
                     <h2>Tétraplégie</h2>
                     <section className="text-display-eye">
@@ -131,7 +132,7 @@ function EyeTrackingForm({ setComponent }) {
 
                 <div id="point-rouge" className={eyeTracker ? "red-point" : "not-red-point"}></div>
             </section>
-        </main>
+        </main >
     );
 }
 
