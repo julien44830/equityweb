@@ -23,6 +23,10 @@ function NavForm({ setHandicap, setComponent }) {
       <label className="radio" htmlFor="trouble">
         <input type="radio" id="trouble" name="handicap" value="Trouble" />
         <span className="inputRadioName">Trouble de l'attention</span></label>
+
+      <label className="radio" htmlFor="parkinson">
+        <input type="radio" id="parkinson" name="handicap" value="Parkinson" />
+        <span className="inputRadioName">Trouble de parkinson</span></label>
     </fieldset>
   );
 }

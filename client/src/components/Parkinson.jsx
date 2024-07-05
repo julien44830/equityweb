@@ -1,5 +1,4 @@
 function Parkinson() {
-    this.name = "Parkinson";
     return (<p>coucou</p>)
 }
 
