@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 function NavForm({ setHandicap, setComponent }) {
+
+
 
 
 
@@ -26,10 +29,11 @@ function NavForm({ setHandicap, setComponent }) {
       <label className="radio" htmlFor="parkison">
         <input type="radio" id="parkison" name="handicap" value="Parkison" />
         <span className="inputRadioName">Parkison</span></label>
-
+      <NavLink to="/eye-tracking">
         <label className="radio" htmlFor="tetraplegie">
-        <input type="radio" id="tetraplegie" name="handicap" value="tetraplegie" />
-        <span className="inputRadioName">Tétraplégie</span></label>
+          <input  type="radio" id="tetraplegie" name="handicap" value="tetraplegie" />
+          <span className="inputRadioName">Tétraplégie</span></label>
+      </NavLink>
     </fieldset>
   );
 }

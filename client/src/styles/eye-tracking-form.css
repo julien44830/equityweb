@@ -10,3 +10,12 @@
 .not-red-point {
     display: none;
 }
+
+.text-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.padding-text-eye{
+    margin-top: -6px;
+}
