@@ -1,12 +1,5 @@
 import PropTypes from "prop-types";
 
-
-
-
-
-
-
-
 function TemplateForm({data} ) {
 console.log('%c⧭', 'color: #917399', data);
 

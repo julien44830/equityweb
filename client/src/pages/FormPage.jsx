@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import TemplateForm from "../components/TemplateForm";
 import NavForm from "../components/NavForm";
 import BlindForm from "../components/BlindForm";
-// import Aveugle from "../components/Aveugle";
+import Parkison from "../components/Parkinson";
 import Daltonien from "../components/Daltonien";
 import Trouble from "../components/Trouble";
+
 
 const data = {
   BlindForm : {
@@ -24,6 +25,12 @@ const data = {
     name: "Trouble",
     h2: "trouble de l'attention",
     p: "trouble de l'attention Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod",
+  },
+  Parkison : {
+    component : Parkison,
+    name: "parkison",
+    h2: "parkison",
+    p: "parkison Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod",
   },
 };
 
