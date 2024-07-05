@@ -1,19 +1,17 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import "./header.css";
-
 /**
  * Smooth scrolling on the whole document
  */
 html {
     scroll-behavior: smooth;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 /*---------Variable collection--------*/
 :root {
     /* Mode 1 */
@@ -30,12 +28,10 @@ html {
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
-
 [data-expand-target] {
     overflow: hidden;
     position: relative;
 }
-
 [data-expand-link]:after {
     content: '';
     position: absolute;
@@ -46,13 +42,10 @@ html {
     z-index: 10;
     margin: -250px;
 }
-
 /*-----------------------------------*/
-
 html {
     font-size: 18px;
 }
-
 body {
     font-family: "Poppins", sans-serif;
     font-weight: var(--font-weight-normal);
@@ -60,14 +53,12 @@ body {
     background-color: var(--grey);
     color: var(--black);
 }
-
 h1,
 h2,
 h3,
 strong {
     font-weight: var(--font-weight-bold);
 }
-
 h1,
 h2,
 h3,
@@ -75,25 +66,21 @@ h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
 h1,
 h2,
 h3,
 h4 {
     color: var(--black);
 }
-
 a {
     color: var(--primary);
     transition: all 0.3s ease-in;
 }
-
 a:hover {
     text-decoration: none;
     border-bottom: none;
     color: var(--black);
 }
-
 /*------------------------*/
 /*---------BUTTONS--------*/
 /*------------------------*/
@@ -109,23 +96,19 @@ a:hover {
     font-size: 1.2rem;
     font-weight: var(--font-weight-bold);
 }
-
 /*-------STYLE BTN----------*/
 .btn-default {
     background: var(--primary);
     color: var(--white);
 }
-
 .btn-default:active {
     color: var(--black);
 }
-
 .btn-contour {
     border: 1px solid var(--black);
     background-color: var(--white);
     color: var(--black);
 }
-
 
 /*-------------------------------*/
 /*---------RADIO BUTTONS--------*/
@@ -143,17 +126,14 @@ a:hover {
     padding: 0.5rem;
     font-size: 1.2rem;
 }
-
 .section-radio legend {
     visibility: hidden;
     height: 0;
 }
-
 .section-radio .radio {
     flex: 1 1 auto;
     text-align: center;
 }
-
 .section-radio .radio input {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -164,7 +144,6 @@ a:hover {
     position: absolute;
     width: 1px;
 }
-
 .section-radio .radio .inputRadioName {
     display: flex;
     cursor: pointer;
@@ -176,7 +155,6 @@ a:hover {
     color: rgba(51, 65, 85, 1);
     transition: all .15s ease-in-out;
 }
-
 .section-radio .radio input:checked+.inputRadioName,
 .section-radio .radio .inputRadioName.active {
     background-color: var(--primary);
@@ -184,11 +162,9 @@ a:hover {
     font-weight: 600;
     border-radius: var(--radius-big);
 }
-
 /*-----------------------------------------*/
 /*---------RADIO BUTTONS VERTICAL --------*/
 /*---------------------------------------*/
-
 .question h2 {
     margin-top: 0;
 }
@@ -201,13 +177,11 @@ a:hover {
     gap: 10px;
     margin-top: 2rem;
 }
-
 .section-radio-vertical * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 .section-radio-vertical label {
     display: flex;
     align-items: center;
@@ -217,7 +191,6 @@ a:hover {
     height: 50px;
     position: relative;
 }
-
 .section-radio-vertical label::before {
     position: absolute;
     content: "";
@@ -230,23 +203,19 @@ a:hover {
     border-radius: 10px;
     border: 2px solid transparent;
 }
-
 .section-radio-vertical label:hover::before {
     transition: all 0.2s ease;
     background-color: #2a2e3c;
 }
-
 .section-radio-vertical .label-radio:has(input:checked)::before {
     background-color: #2d3750;
     border-color: var(--primary);
     height: 50px;
 }
-
 .section-radio-vertical .label-radio .inputRadioName {
     color: var(--black);
     font-size: 1.2rem;
 }
-
 .section-radio-vertical .label-radio input[type="radio"] {
     background-color: var(--grey-dark);
     appearance: none;
@@ -257,13 +226,11 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
 .section-radio-vertical .label-radio input[type="radio"]:checked {
     background-color: var(--primary);
     -webkit-animation: puls 0.7s forwards;
     animation: pulse 0.7s forwards;
 }
-
 .section-radio-vertical .label-radio input[type="radio"]:before {
     content: "";
     width: 16px;
@@ -273,7 +240,6 @@ a:hover {
     background-color: #fff;
     transform: scale(0);
 }
-
 .section-radio-vertical .label-radio input[type="radio"]:checked::before {
     transform: scale(1);
 }
@@ -282,13 +248,11 @@ a:hover {
     flex-direction: column;
     gap: 10px;
 }
-
 .section-radio-vertical * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 .section-radio-vertical label {
     display: flex;
     align-items: center;
@@ -298,7 +262,6 @@ a:hover {
     height: 50px;
     position: relative;
 }
-
 .section-radio-vertical label::before {
     position: absolute;
     content: "";
@@ -311,22 +274,18 @@ a:hover {
     border-radius: 10px;
     border: 2px solid transparent;
 }
-
 .section-radio-vertical label:hover::before {
     transition: all 0.2s ease;
     background-color: #2a2e3c;
 }
-
 .section-radio-vertical .label:has(input:checked)::before {
     background-color: #2d3750;
     border-color: #435dd8;
     height: 50px;
 }
-
 .section-radio-vertical .label .inputRadioName {
     color: var(--black);
 }
-
 .section-radio-vertical .label input[type="radio"] {
     background-color: #202030;
     appearance: none;
@@ -337,13 +296,11 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
 .section-radio-vertical .label input[type="radio"]:checked {
     background-color: #435dd8;
     -webkit-animation: puls 0.7s forwards;
     animation: pulse 0.7s forwards;
 }
-
 .section-radio-vertical .label input[type="radio"]:before {
     content: "";
     width: 6px;
@@ -353,20 +310,16 @@ a:hover {
     background-color: #fff;
     transform: scale(0);
 }
-
 .section-radio-vertical .label input[type="radio"]:checked::before {
     transform: scale(1);
 }
-
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
     }
-
     70% {
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
     }
-
     100% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
@@ -375,16 +328,13 @@ a:hover {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
     }
-
     70% {
         box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
     }
-
     100% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
-
 /*------------------------*/
 /*---------CARDS---------*/
 /*-----------------------*/
@@ -403,28 +353,23 @@ a:hover {
     transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
     cursor: pointer;
 }
-
 .card:hover {
     transform: scale(1.05);
     background: var(--primary);
 }
-
 .card .title-card {
     text-transform: uppercase;
     margin: 0;
     font-size: 1.8rem;
     line-height: 1;
 }
-
 .card .infos-card {
     gap: 2rem;
 }
-
 .card header {
     width: 100%;
     gap: 1rem;
 }
-
 
 
 .formpage {
@@ -434,27 +379,23 @@ a:hover {
     text-align: center;
     max-height: 100vh;
 }
-
 .template-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     max-height: 65vh;
 }
-
 .text {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     display: flex;
     padding: 17px;
-
     & p {
         width: 40vw;
         text-align: justify;
     }
 }
-
 
 .form {
     max-height: 63vh;
@@ -465,7 +406,6 @@ a:hover {
     gap: 0.7rem;
     border-radius: 5px;
     padding: 15px;
-
     & input {
         height: 3rem;
         width: 70%;
@@ -473,7 +413,6 @@ a:hover {
         border: none;
         border-radius: 5px;
     }
-
     & button {
         height: 3rem;
         border: none;
@@ -482,12 +421,10 @@ a:hover {
         cursor: pointer;
     }
 }
-
 .form-item {
     position: relative;
     margin-bottom: 15px
 }
-
 .form-item input {
     display: block;
     width: 400px;
@@ -496,11 +433,9 @@ a:hover {
     transition: all .3s ease;
     padding: 0 15px
 }
-
 /* .form-item input:focus {
     border-color: blue
 } */
-
 .form-item label {
     position: absolute;
     cursor: text;
@@ -513,17 +448,14 @@ a:hover {
     color: #999;
     transition: all .3s ease
 }
-
 .form-item input:focus+label,
 .form-item input:valid+label {
     font-size: 11px;
     top: -5px
 }
-
 .form-item input:focus+label {
     color: #33CCCC;
 }
-
 .black-square {
     background-color: black;
     position: absolute;
@@ -534,13 +466,12 @@ a:hover {
     transition-duration: 3s, 5s;
 }
 
-
 .dalto {
     position: absolute;
-    bottom: 0;
-    right: 75px;
-    width: 50%;
-    height: 64vh;
+    bottom: 50px;
+    right: 270px;
+    width: 30%;
+    height: 70vh;
     background-color: #00ff00c2;
     /* Couleur de fond verte */
     filter: grayscale(100%) contrast(100%) hue-rotate(280deg);
