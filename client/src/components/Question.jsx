@@ -19,8 +19,10 @@ function Question({ data }) {
   return (
     <section className="question">
       <h2>{data.Question}</h2>
-      <fieldset role="radiogroup" className="section-radio">
-        <label className="radio" htmlFor={`prop1-${data.id}`}>
+
+      
+      <fieldset role="radiogroup" className="section-radio-vertical">
+        <label className="label-radio" htmlFor={`prop1-${data.id}`}>
           <input
             type="radio"
             id={`prop1-${data.id}`}
@@ -31,7 +33,7 @@ function Question({ data }) {
           <span className="inputRadioName">{data.Proposition1}</span>
         </label>
 
-        <label className="radio" htmlFor={`prop2-${data.id}`}>
+        <label className="label-radio" htmlFor={`prop2-${data.id}`}>
           <input
             type="radio"
             id={`prop2-${data.id}`}
@@ -42,7 +44,7 @@ function Question({ data }) {
           <span className="inputRadioName">{data.Proposition2}</span>
         </label>
 
-        <label className="radio" htmlFor={`prop3-${data.id}`}>
+        <label className="label-radio" htmlFor={`prop3-${data.id}`}>
           <input
             type="radio"
             id={`prop3-${data.id}`}
@@ -53,6 +55,7 @@ function Question({ data }) {
           <span className="inputRadioName">{data.Proposition3}</span>
         </label>
       </fieldset>
+      <button type="button" className="btn btn-default">Question suivante</button>
     </section>
   );
 }
