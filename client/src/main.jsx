@@ -28,10 +28,6 @@ const router = createBrowserRouter([
         element: <FormPage />,
       },
       {
-        path: "/immersion-daltonisme",
-        element: <FormPageDalt />,
-      },
-      {
         path: "/eye-tracking",
         element: <EyeTrackingForm />,
       },

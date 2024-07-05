@@ -66,7 +66,7 @@ function TemplateForm({ data, component }) {
     
 
   return (
-    <section className="template-form">
+    <section className="row template-form">
       <aside className="text">
         <h2 tabIndex="0">{data.h2}</h2>
         <p tabIndex="0">{data.p}</p>

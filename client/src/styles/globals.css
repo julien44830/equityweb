@@ -66,6 +66,9 @@ h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+section h2 {
+    text-align: left;
+}
 h1,
 h2,
 h3,
@@ -118,7 +121,6 @@ a:hover {
     position: relative;
     display: flex;
     margin-top: 20px;
-    translate: -430px;
     flex-wrap: wrap;
     border-radius: var(--radius-big);
     background-color: #EEE;
@@ -374,21 +376,20 @@ a:hover {
 
 
 .formpage {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     max-height: 100vh;
 }
 .template-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
+    align-items: start;
     max-height: 65vh;
 }
 .text {
     flex-direction: column;
-    align-items: center;
     /* justify-content: center; */
     display: flex;
     padding: 17px;
