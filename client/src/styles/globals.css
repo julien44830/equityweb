@@ -485,6 +485,7 @@ a:hover {
 
   :focus-visible{
     border: solid #33CCCC;
+    border-radius: 5px;
     outline-style: dashed;
     outline-color:  white;
     outline-width: 3px;
