@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useRef, useEffect, useState } from "react";
 
 function TemplateForm({ data, component }) {
-  const [tremble, setTremble] = useState(false);
+  const [tremble, setTremble] = useState(true);
   // console.log('%c⧭tremble ', 'color: #735656', tremble);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ function TemplateForm({ data, component }) {
     };
   }, []);
 
-    
+
 
   return (
     <section className="row template-form">
@@ -76,26 +76,26 @@ function TemplateForm({ data, component }) {
           <div className="custom-cursor" ref={cursorRef} />
           <form className="form">
             <div className="form-item">
-              <input type="text" id="firstname" name="firstname" required />
-              <label htmlFor="firstname">Prénom</label>
+              <input type="text" id="firstname" name="firstname" className="no-pointer" required />
+              <label htmlFor="firstname" className="no-pointer">Prénom</label>
             </div>
             <div className="form-item">
-              <input type="text" id="lastname" name="lastname" required />
-              <label htmlFor="lastname">Nom</label>
+              <input type="text" id="lastname" name="lastname" className="no-pointer" required />
+              <label htmlFor="lastname" className="no-pointer">Nom</label>
             </div>
             <div className="form-item">
-              <input type="email" id="email" name="email" required />
-              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" className="no-pointer" required />
+              <label htmlFor="email" className="no-pointer">Email</label>
             </div>
             <div className="form-item">
-              <input type="password" id="password" name="password" required />
-              <label htmlFor="password">Mot de passe</label>
+              <input type="password" id="password" name="password" className="no-pointer" required />
+              <label htmlFor="password" className="no-pointer">Mot de passe</label>
             </div>
             <div className="form-item">
-              <input type="password" id="password-confirmation" name="password-confirmation" required />
-              <label htmlFor="password-confirmation">Confirmation mot de passe</label>
+              <input type="password" id="password-confirmation" name="password-confirmation" className="no-pointer" required />
+              <label htmlFor="password-confirmation" className="no-pointer">Confirmation mot de passe</label>
             </div>
-            <button type="submit" className="btn btn-default">Valider</button>
+            <button type="submit" className="btn btn-default no-pointer">Valider</button>
           </form>
         </div>
       ) : (
