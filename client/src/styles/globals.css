@@ -517,6 +517,12 @@ a:hover {
     cursor: none;
     pointer-events: none;
     display: none;
-    z-index: 44;
+    z-index: 4;
     transition: transform 0.05s ease-in-out;
+}
+
+.no-pointer {
+    cursor: none;
+    pointer-events: none;
+
 }
