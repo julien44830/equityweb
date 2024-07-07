@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useRef, useEffect, useState } from "react";
 
 function TemplateForm({ data, component }) {
-  const [tremble, setTremble] = useState(false);
+  const [tremble, setTremble] = useState(true);
   // console.log('%c⧭tremble ', 'color: #735656', tremble);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ function TemplateForm({ data, component }) {
     };
   }, []);
 
-    
+
 
   return (
     <section className="row template-form">
