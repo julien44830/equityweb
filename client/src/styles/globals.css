@@ -52,6 +52,7 @@ body * {
 html {
     background-color: var(--grey);
 }
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: var(--font-weight-normal);
@@ -375,9 +376,10 @@ a:hover {
     align-items: start;
     max-height: 65vh;
 } */
-.template-form h2{
+.template-form h2 {
     margin: 0;
 }
+
 .text {
     /* flex-direction: column;
  justify-content: center; 
@@ -417,7 +419,7 @@ a:hover {
     }
 }
 
-.btn-default{
+.btn-default {
     width: 20vw;
 }
 
@@ -483,14 +485,39 @@ a:hover {
     filter: grayscale(100%) contrast(100%) hue-rotate(280deg);
     /* Filtre simulant la deutéranopie (difficulté à distinguer le vert) */
     z-index: 10;
-  }
+}
 
-  :focus-visible{
+:focus-visible {
     border: solid #33CCCC;
     border-radius: 5px;
     outline-style: dashed;
-    outline-color:  white;
+    outline-color: white;
     outline-width: 3px;
     outline-offset: 4px;
     padding: 15px;
-  }
+}
+
+/* css pour le tremblement formulaire parkinson */
+
+.shaking-cursor-div {
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+}
+
+.custom-cursor {
+    position: absolute;
+    /* La taille du curseur personnalisé */
+    width: 14px;
+    height: 14px;
+    /* background-image: url("../assets/icons/cursor-white.png") no-repeat center center; */
+    cursor: url("cursor-white.png");
+    background-image: ;
+    border: solid #000 2px;
+    /* background-color: #000; */
+    pointer-events: none;
+    /* pointer-events: visible; bof bof */
+    display: none;
+    z-index: 44;
+    transition: transform 0.03s ease-in-out;
+}
