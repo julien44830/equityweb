@@ -526,3 +526,11 @@ a:hover {
     pointer-events: none;
 
 }
+
+.question-false {
+    color: red;
+}
+
+.question-true {
+    color: green;
+}
