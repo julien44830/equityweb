@@ -14,23 +14,37 @@ function Question({ data, setNumb, numb }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isLocked, setIsLocked] = useState(false);
 
+  const correctAnswer = 'option2'; // Définir la réponse correcte ici
+
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
     setIsLocked(true);
   };
 
-  // <label className={selectedOption === 'option1' ? 'selected' : ''}>
-  // <input
-  //   type="radio"
-  //   name="quiz"
-  //   value="option1"
-  //   checked={selectedOption === 'option1'}
-  //   onChange={handleOptionChange}
-  //   disabled={isLocked && selectedOption !== 'option1'}
-  // />
-  // <span>Option 1</span>
+  const getLabelClass = (option) => {
+    if (!isLocked) return '';
+    return selectedOption === option
+      ? selectedOption === correctAnswer
+        ? 'correct'
+        : 'incorrect'
+      : '';
+  };
 
+  // return (
+  //   <div>
+  //     <form>
+  //       <label className={getLabelClass('option1')}>
+  //         <input
+  //           type="radio"
+  //           name="quiz"
+  //           value="option1"
+  //           checked={selectedOption === 'option1'}
+  //           onChange={handleOptionChange}
+  //           disabled={isLocked}
+  //         />
+  //         <span>Option 1</span>
+  //       </label>
 
   // fin du test, et bientot fin de chantier :)
 
