@@ -1,112 +1,76 @@
 import { useState, useEffect } from "react";
 
 function Question({ data, setNumb, numb }) {
-  console.log('%c⧭', 'color: #1d3f73', data);
   const [reponse, setReponse] = useState("");
-  console.log('%c⧭', 'color: #997326', "reponse", reponse);
-  console.log('%c⧭', 'color: #997326', "reponse", data.reponse);
-
-  // const [true, setTrue] = useState("");
-  // const [false, setFalse] = useState("");
-
-  // on va tester ça :
-
-  const [selectedOption, setSelectedOption] = useState(null);
   const [isLocked, setIsLocked] = useState(false);
-
-  const correctAnswer = 'option2'; // Définir la réponse correcte ici
-
-  const handleOptionChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectedOption(selectedValue);
-    setIsLocked(true);
-  };
-
-  const getLabelClass = (option) => {
-    if (!isLocked) return '';
-    return selectedOption === option
-      ? selectedOption === correctAnswer
-        ? 'correct'
-        : 'incorrect'
-      : '';
-  };
-
-  // return (
-  //   <div>
-  //     <form>
-  //       <label className={getLabelClass('option1')}>
-  //         <input
-  //           type="radio"
-  //           name="quiz"
-  //           value="option1"
-  //           checked={selectedOption === 'option1'}
-  //           onChange={handleOptionChange}
-  //           disabled={isLocked}
-  //         />
-  //         <span>Option 1</span>
-  //       </label>
-
-  // fin du test, et bientot fin de chantier :)
-
-
 
   const selectReponse = (e) => {
     setReponse(e.target.value);
+    setIsLocked(true);
   };
 
   useEffect(() => {
     if (data.reponse === reponse) {
       console.log("gagné");
-      setTrue("question-true")
-      // input + span (qui sont dans un label, qui est selectionné)
-      //  = green (le background? juste le border?)
     }
 
     if (numb === 19) {
-      setNumb(0)
+      setNumb(0);
       // afficher un component resultat avec nombre de bonne rep
     }
-  }, [reponse, data.reponse], numb);
+  }, [reponse, data.reponse, numb, setNumb]);
 
   const cuntNum = () => {
-    setNumb(numb + 1)
-  }
+    setNumb(numb + 1);
+    setIsLocked(false); // Reset lock for next question
+    setReponse(""); // Reset selected answer for next question
+  };
+
+  const getLabelClass = (option) => {
+    if (!isLocked) return '';
+    return reponse === option
+      ? reponse === data.reponse
+        ? 'correct'
+        : 'incorrect'
+      : '';
+  };
 
   return (
     <section className="question">
       <h1>{data.Question}</h1>
-
-
       <fieldset role="radiogroup" className="section-radio-vertical">
-        <label className="label-radio" htmlFor={`prop1-${data.id}`}>
+        <label className={`label-radio ${getLabelClass("Proposition1")}`} htmlFor={`prop1-${data.id}`}>
           <input
             type="radio"
             id={`prop1-${data.id}`}
             name={`quiz-${data.id}`}
             value="Proposition1"
             onChange={selectReponse}
+            disabled={isLocked}
           />
           <span className="inputRadioName">{data.Proposition1}</span>
         </label>
 
-        <label className="label-radio" htmlFor={`prop2-${data.id}`}>
+        <label className={`label-radio ${getLabelClass("Proposition2")}`} htmlFor={`prop2-${data.id}`}>
           <input
             type="radio"
             id={`prop2-${data.id}`}
             name={`quiz-${data.id}`}
             value="Proposition2"
             onChange={selectReponse}
+            disabled={isLocked}
           />
           <span className="inputRadioName">{data.Proposition2}</span>
         </label>
 
-        <label className="label-radio" htmlFor={`prop3-${data.id}`}>
+        <label className={`label-radio ${getLabelClass("Proposition3")}`} htmlFor={`prop3-${data.id}`}>
           <input
             type="radio"
             id={`prop3-${data.id}`}
             name={`quiz-${data.id}`}
             value="Proposition3"
             onChange={selectReponse}
+            disabled={isLocked}
           />
           <span className="inputRadioName">{data.Proposition3}</span>
         </label>
