@@ -423,6 +423,12 @@ a:hover {
     width: 20vw;
 }
 
+@media screen and (max-width: 992px) {
+    .btn-default {
+        width: 50vw;
+    }
+}
+
 .form-item {
     position: relative;
     margin-bottom: 15px
@@ -524,5 +530,43 @@ a:hover {
 .no-pointer {
     cursor: none;
     pointer-events: none;
+
+}
+
+.question-false {
+    color: red;
+}
+
+.question-true {
+    color: green;
+}
+
+.question {
+
+    & .label-radio {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    & .label-radio.correct {
+        background-color: lightgreen;
+    }
+
+    & .label-radio.incorrect {
+        background-color: lightcoral;
+    }
+
+    & .inputRadioName {
+        margin-left: 10px;
+    }
+
+    & input[type="radio"] {
+        margin-right: 10px;
+    }
 
 }
