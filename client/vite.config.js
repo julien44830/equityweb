@@ -1,9 +1,6 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { defineConfig } from "vite";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -11,7 +8,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['lottie-react']
-    }
-  }
+      external: ['lottie-react'], // Déclare lottie-react comme une dépendance externe
+    },
+  },
 });
