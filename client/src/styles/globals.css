@@ -120,10 +120,10 @@ a:hover {
 }
 
 /*-------STYLE BTN----------*/
-.btn-default {
+/* .btn-default {
     background: var(--primary);
     color: var(--black);
-}
+} */
 
 .btn-default:active {
     color: var(--black);
